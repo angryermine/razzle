@@ -1,0 +1,39 @@
+{
+  "name": "razzle-examples-with-fastify",
+  "version": "4.0.5",
+  "license": "MIT",
+  "scripts": {
+    "start:tsc": "tsc -b -w --preserveWatchOutput",
+    "start": "concurrently \"yarn start:tsc\" \"razzle start\"",
+    "build": "tsc -b && razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "fastify": "^3.19.1",
+    "fastify-static": "^4.2.2",
+    "point-of-view": "^4.15.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.0",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.4",
+    "@types/webpack-env": "^1.15.2",
+    "babel-preset-razzle": "4.0.5",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^4.5.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "razzle": "^4.0.5",
+    "razzle-dev-utils": "^4.0.5",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

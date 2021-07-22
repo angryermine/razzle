@@ -98,6 +98,7 @@ let examples =
         example: 'with-experimental-refresh',
         path: 'examples/with-experimental-refresh'
       },
+      { example: 'with-fastify', path: 'examples/with-fastify' },
       {
         example: 'with-firebase-functions',
         path: 'examples/with-firebase-functions'
